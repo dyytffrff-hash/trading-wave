@@ -6,7 +6,7 @@ function Tournaments() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/tournaments")
+    fetch("/api/tournaments")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load tournaments");
